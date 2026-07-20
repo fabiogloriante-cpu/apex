@@ -88,7 +88,7 @@
 
     function draw(){
       const visibleProducts=baseProducts.concat(products).filter(x=>!removedProducts.includes(x.id));
-      $('#list').innerHTML=visibleProducts.length?visibleProducts.map(x=>`<div class="item"><img src="${x.image||'assets/apex-products.png'}" alt=""><div><strong>${x.name}</strong><small>${x.category} · ${x.color}<br>${money(x.price)} · ${x.sizes.join(', ')}</small></div><button class="remove" onclick="removeProduct(${x.id})" aria-label="Elimina">×</button></div>`).join(''):'<div class="empty">Non ci sono articoli nel catalogo.</div>';
+      $('#list').innerHTML=visibleProducts.length?visibleProducts.map(x=>`<div class="item"><img src="${x.image||'assets/apex-products-web.jpg'}" alt=""><div><strong>${x.name}</strong><small>${x.category} · ${x.color}<br>${money(x.price)} · ${x.sizes.join(', ')}</small></div><button class="remove" onclick="removeProduct(${x.id})" aria-label="Elimina">×</button></div>`).join(''):'<div class="empty">Non ci sono articoli nel catalogo.</div>';
     }
 
     function removeProduct(id){
@@ -110,3 +110,4 @@
   </script>
 </body>
 </html>
+
