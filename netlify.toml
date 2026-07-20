@@ -1,0 +1,8 @@
+[[edge_functions]]
+  function = "admin-auth"
+  path = "/gestisci-articoli.html"
+
+[[edge_functions]]
+  function = "admin-auth"
+  path = "/gestisci-articoli"
+
